@@ -14,42 +14,43 @@
         </div>
         <section class="numpad">
           <div class="row row-1">
-            <button class="btn btn-ac">AC</button>
-            <button class="btn btn-percent">%</button>
-            <button class="btn btn-multiplication">X</button>
-            <button class="btn btn-division">÷</button>
+            <button class="btn btn-ac" value="ac">AC</button>
+            <button class="btn btn-percent" value="percent">%</button>
+            <button class="btn btn-multiplication" value="*">x</button>
+            <button class="btn btn-division" value="/">÷</button>
           </div>
           <div class="row row-2">
-            <button class="btn btn-7">7</button>
-            <button class="btn btn-8">8</button>
-            <button class="btn btn-9">9</button>
-            <button class="btn btn-minus">-</button>
+            <button class="btn btn-7" value="7">7</button>
+            <button class="btn btn-8" value="8">8</button>
+            <button class="btn btn-9" value="9">9</button>
+            <button class="btn btn-minus" value="-">-</button>
           </div>
           <div class="row row-3">
-            <button class="btn btn-4">4</button>
-            <button class="btn btn-5">5</button>
-            <button class="btn btn-6">6</button>
-            <button class="btn btn-plus">+</button>
+            <button class="btn btn-4" value="4">4</button>
+            <button class="btn btn-5" value="5">5</button>
+            <button class="btn btn-6" value="6">6</button>
+            <button class="btn btn-plus" value="+">+</button>
           </div>
           <!--Equal button occupies 2 slots in the column-->
           <!--There must be a better way to do this, but for now it's working-->
           <div class="equal-div">
             <div class="row three-digits">
               <div class="row row-4">
-                <button class="btn btn-1">1</button>
-                <button class="btn btn-2">2</button>
-                <button class="btn btn-3">3</button>
+                <button class="btn btn-1" value="1">1</button>
+                <button class="btn btn-2" value="2">2</button>
+                <button class="btn btn-3" value="3">3</button>
               </div>
               <div class="row row-5">
-                <button class="btn btn-0">0</button>
-                <button class="btn btn-dot">.</button>
-                <button class="btn btn-sign">+/-</button>
+                <button class="btn btn-0" value="0">0</button>
+                <button class="btn btn-dot" value=".">.</button>
+                <button class="btn btn-sign" value="sign">+/-</button>
               </div>
             </div>
-            <button class="btn btn-equal">=</button>
+            <button class="btn btn-equal" value="result">=</button>
           </div>
         </section>
       </section>
     </main>
+    <script src="./scripts/calculator.js"></script>
   </body>
 </html>
