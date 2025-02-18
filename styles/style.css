@@ -56,6 +56,30 @@ main {
 .btn {
   flex: 1;
   margin: 2px 2px;
+  padding: 2px 5px;
+  max-width: 30px;
+  background-color: #495057;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.row-1 .btn {
+  text-align: center;
+  width: 25px;
+}
+
+.equal-div {
+  display: flex;
+}
+
+.three-digits {
+  display: flex;
+  flex-direction: column;
+}
+
+.three-digits .btn {
+  width: 28px;
 }
 
 /*Colors, fonts*/
@@ -66,4 +90,20 @@ main {
 
 .btn-equal {
   background-color: #ffd166;
+  width: 28px;
+}
+
+.btn:active {
+  background-color: #343a40;
+  transform: translateY(1px);
+}
+
+.btn-ac:active {
+  background-color: #af2c2e;
+  transform: translateY(1px);
+}
+
+.btn-equal:active {
+  background-color: #c49f4b;
+  transform: translateY(1px);
 }

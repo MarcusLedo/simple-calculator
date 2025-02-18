@@ -31,15 +31,21 @@
             <button class="btn btn-6">6</button>
             <button class="btn btn-plus">+</button>
           </div>
-          <div class="row row-4">
-            <button class="btn btn-1">1</button>
-            <button class="btn btn-2">2</button>
-            <button class="btn btn-3">3</button>
-          </div>
-          <div class="row row-5">
-            <button class="btn btn-0">0</button>
-            <button class="btn btn-dot">.</button>
-            <button class="btn btn-sign">+/-</button>
+          <!--Equal button occupies 2 slots in the column-->
+          <!--There must be a better way to do this, but for now it's working-->
+          <div class="equal-div">
+            <div class="row three-digits">
+              <div class="row row-4">
+                <button class="btn btn-1">1</button>
+                <button class="btn btn-2">2</button>
+                <button class="btn btn-3">3</button>
+              </div>
+              <div class="row row-5">
+                <button class="btn btn-0">0</button>
+                <button class="btn btn-dot">.</button>
+                <button class="btn btn-sign">+/-</button>
+              </div>
+            </div>
             <button class="btn btn-equal">=</button>
           </div>
         </section>
