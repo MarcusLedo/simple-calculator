@@ -30,13 +30,14 @@ function onClick(button) {
       console.log("CALCULATE THE EXPRESSION");
 
       break;
-    case "sign":
-      console.log("CHANGE SIGN");
-      //toggleSign()
-      break;
     case "percent":
       console.log("DIVIDE BY 100");
-      //percentage()
+      try {
+        expression = percentage(expression);
+      } catch (e) {
+        isBlocked = true;
+      }
+
       break;
     default:
       console.log(`ADD '${button.value}' to the expression`);
@@ -76,4 +77,11 @@ function replaceSymbols(text) {
 function evaluateExpression(expression) {
   console.log(eval(expression).toString());
   return eval(expression).toString();
+}
+
+function percentage(expression) {
+  //Just divide the thing by 100
+  const result = evaluateExpression(expression);
+
+  return (result / 100).toString();
 }

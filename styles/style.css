@@ -42,7 +42,7 @@ main {
   background-color: #495057;
   padding: 10px 10px;
   width: 78%;
-  height: 47px;
+  height: 52px;
   text-align: right;
   font-size: 40px;
 
@@ -64,8 +64,8 @@ main {
 .btn {
   flex: 1;
   font-size: 28px;
-  margin: 2px 2px;
-  padding: 2px 5px;
+  margin: 4px 4px;
+  padding: 3px 5px;
   max-width: 45px;
   background-color: #495057;
   color: white;
@@ -121,4 +121,13 @@ main {
 .btn-equal:active {
   background-color: #c49f4b;
   transform: translateY(1px);
+}
+
+.btn-sign:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+}
+
+.btn-sign:active {
+  transform: translateY(0);
 }
