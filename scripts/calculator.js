@@ -17,7 +17,6 @@ for (const button of buttons) {
 function onClick(button) {
   switch (button.value) {
     case "ac":
-      console.log("CLEAR THE DISPLAY");
       isBlocked = false;
       clearDisplay();
       break;
@@ -27,11 +26,9 @@ function onClick(button) {
       } catch (e) {
         isBlocked = true;
       }
-      console.log("CALCULATE THE EXPRESSION");
 
       break;
     case "percent":
-      console.log("DIVIDE BY 100");
       try {
         expression = percentage(expression);
       } catch (e) {
@@ -40,7 +37,6 @@ function onClick(button) {
 
       break;
     default:
-      console.log(`ADD '${button.value}' to the expression`);
       expression = concatToExpression(expression, button.value);
   }
   if (!isBlocked && expression != "Infinity")
@@ -75,7 +71,6 @@ function replaceSymbols(text) {
 }
 
 function evaluateExpression(expression) {
-  console.log(eval(expression).toString());
   return eval(expression).toString();
 }
 
